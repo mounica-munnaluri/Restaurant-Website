@@ -1,0 +1,44 @@
+
+
+
+/*footer*/
+footer{
+	position: relative;
+	background-color: black;
+	height: 50px;
+	margin-top: 50px;
+	opacity: 0.8;
+}
+
+
+#fb_twitter img{
+	margin-right: 30px;
+	margin-top: 9px;
+}
+
+
+/*Navigation Menu*/
+#mynav{
+	margin-bottom: 0;
+	border-radius: 0;
+}
+.logo{
+	height: 80px;
+}
+
+/*.navbar-custom{
+    color: #f3f2f0;
+    background-color: #84000D;
+}*/
+
+#mynav a{
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #fff;
+	font-size: 15px;
+}
+#mynav a:hover{
+	background-color: #fff;
+	color: #000;
+}

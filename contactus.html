@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width ,initial-scale=1">
+
+<!--BOOTSTRAP CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- My own CSS -->
+<link rel="stylesheet" type="text/css" href="contactus.css">
+<link rel="stylesheet" type="text/css" href="nav_footer.css">
+
+</head>
+<body>
+
+<!--navigation bar-->
+<nav class="navbar  navbar-inverse .navbar-fixed-top navbar-custom" id="mynav">
+<div class="container">
+	 <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	   </button>
+	  <!-- <img src="logo1.jpg" class="logo">-->
+	 </div>
+
+	 <div class="collapse navbar-collapse" id="mainnav">
+	   <ul class="nav navbar-nav navbar-right" id="navright">
+	    <li><a href="menu.html">MENU</a></li>
+	    <li><a href="order-online.html">ORDER ONLINE</a></li>
+	    <li><a href="gallery.html">GALLERY</a></li>
+	    <li><a href="contactus.html">CONTACT US</a></li>
+	   </ul>
+	 </div>
+</div>
+</nav>
+
+
+<!--contact us form-->
+<div class="container">
+	<form class="form" >
+		<div class="row">
+			<div class="col-sm-8">
+				<h3>CONTACT US</h3>
+
+				<!--Name-->
+				<div class="form-group">
+					<label for="name">Name:</label>
+				   	<input type="text" class="form-control" id="name" pattern="[a-zA-Z\s]*" title="Name must contain characters only." required>
+				</div>
+
+  		        <!--Email-->
+				<div class="form-group">
+					<label for="email">Email address:</label>
+		   			<input type="email" class="form-control" id="email"  required >
+		        </div>
+
+		        <!--Phone-->	
+		        <div class="form-group">
+					<label for="phone">Phone Number:</label>
+		   			<input type="text" class="form-control" id="phone" pattern="[0-9]{10}" title='Please enter proper phone number.' required>
+		        </div>
+
+		        <!--Comment-->
+		        <div class="form-group">
+ 					<label for="comment">Comment:</label>
+  					<textarea class="form-control" rows="5" id="comment"></textarea>
+				</div>
+
+				<button type="submit" class="btn btn-lg btn_contact">Submit</button>
+		    </div>
+
+
+		    <div class="col-sm-4 ">
+		    	<div class="address">
+		    		<h4 class="text-center">Address</h4>
+		    		<p>1380 S Main St<br/>
+					Milpitas, CA 95035<br/>
+					Phone: 408-945-9000<br/>
+					Catering and Party Hall Enquiries: 408-945-9100<br/>
+					Email:info@dosabawarchi.us</p>
+					<br/>
+				</div>
+				<div class="hours text-center">
+					<h4>Hours</h4>
+					<p>Mon-Thurs<br/>
+					11:30AM - 2:30PM<br/>
+					06:00PM - 10:00PM<br/>
+					</p>
+					<p>Fri & Sat<br/>
+					11:30AM - 2:30PM<br/>
+					06:00PM - 10:30PM<br/>
+					</p>
+					<p>Mon-Thurs<br/>
+					11:30AM - 2:30PM<br/>
+					06:00PM - 09:30PM<br/>
+					</p>
+				</div>
+				</div>
+		    </div>
+		</div>
+	</form>
+</div>
+
+
+<div class="container map_address">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.0917320106178!2d-121.9039080852602!3d37.411306640761644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fceb525c94b6d%3A0x57fb8d1926b1567f!2sDosa+Bawarchi+Restaurant!5e0!3m2!1sen!2sus!4v1469401489695" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
+</div>
+
+<!--footer-->
+<footer class="text-center">
+	<div id="fb_twitter">
+		<a href="https://www.facebook.com/Dosa-Bawarchi-169602009718136/" target="_blank"><img src="fb.png" class="fb" width="35" height="35" /></a>
+		<a href="https://twitter.com/dosa_bawarchi" target="_blank"><img src="twitter.png" width="38" height="35" class="twitter"/></a>
+	</div>
+</footer>
+
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--Bootstrap JS-->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>

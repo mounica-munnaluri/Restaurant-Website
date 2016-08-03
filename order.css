@@ -1,0 +1,105 @@
+body{
+	background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)), url('order.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.row{
+	margin-top: 30px;
+}
+.form-control{
+	border:1px solid black;
+}
+.order_img{
+	
+	width: 100%;
+	height: 100%;
+
+}
+.item_name{
+	display: block;
+	width: 150px;
+}
+
+.item_group{
+	border:1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+}
+.item_heading{
+	background-color: #000;
+	border-radius: 10px;
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+}
+.item_heading:hover{
+	cursor: pointer;
+}
+.item_price{
+	font-style: italic;
+}
+.cat_soups,.cat_indian_appetizers{
+	width: 100%;
+}
+.item_list{
+	width: 100%;
+}
+.item_list tr td{
+	padding: 3px;
+	vertical-align: top;
+}
+.btn_add{
+	border-radius: 15px;
+	padding: 0px 15px;
+	background-color: #2E2E2E;
+	color: #fff;
+	outline:none;
+	border:none;
+}
+.btn_add:hover{
+	background-color: #BDBDBD;
+	color: #000;
+}
+.btn_add:focus{
+	outline: none;
+	color: #000;
+}
+.btn_remove{
+	background-color: #2E2E2E;
+	color: #fff;
+}
+.btn_remove:hover{
+	background-color: #BDBDBD;
+	color: #000;
+}
+
+/*my order*/
+.my_order,.order_setting{
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#btn_order{
+	background-color: #000;
+	color: #fff;
+}
+#order_table{
+	width: 100%;
+}
+#order_table tr td{
+	padding: 3px;
+
+}
+
+
+
+@media screen and (max-width: 992px){
+.item_name{
+	display: inline-block;
+	width: 200px;
+//	border: 1px solid blue;
+
+}
+}

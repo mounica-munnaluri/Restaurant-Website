@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Online</title>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width ,initial-scale=1">
+	<!--BOOTSTRAP CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="nav_footer.css">
+	<link rel="stylesheet" type="text/css" href="order.css">
+</head>
+
+<body>
+
+<!--navigation bar-->
+<nav class="navbar  navbar-inverse .navbar-fixed-top navbar-custom" id="mynav">
+<div class="container">
+	 <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	   </button>
+	  <!-- <img src="logo1.jpg" class="logo">-->
+	 </div>
+
+	 <div class="collapse navbar-collapse" id="mainnav">
+	   <ul class="nav navbar-nav navbar-right" id="navright">
+	    <li><a href="menu.html">MENU</a></li>
+	    <li><a href="order-online.html">ORDER ONLINE</a></li>
+	    <li><a href="gallery.html">GALLERY</a></li>
+	    <li><a href="contactus.html">CONTACT US</a></li>
+	   </ul>
+	 </div>
+</div>
+</nav>
+
+
+<div class="container">
+
+		
+	<form class="form" id="form_order" >
+		<div class="row">
+			<!--Form to order online-->
+			<div class="col-sm-8">
+				
+						<h3>Order Online</h3>
+						<p>Please call 408-945-9000  or fill out the  order form  and we will respond back to you ASAP.</p>
+
+						<!--Form for odering online-->
+						<!--Name-->
+						<div class="form-group">
+							<label for="name">Name:</label>
+				   			<input type="text" class="form-control" id="name" pattern="[a-zA-Z\s]*" title="Name must contain characters only.">
+				        </div>
+
+				        <!--Email-->
+						<div class="form-group">
+							<label for="email">Email address:</label>
+				   			<input type="email" class="form-control" id="email" oninvalid="this.setCustomValidity('Please enter proper email.');" required >
+				        </div>
+
+				        <!--Phone-->	
+				        <div class="form-group">
+							<label for="phone">Phone Number:</label>
+				   			<input type="text" class="form-control" id="phone" pattern="[0-9]{10}" title='Please enter proper phone number.' required>
+				        </div>
+				    
+
+						<br/>
+						<label>Select the food you like to order:</label>
+
+						<div class="row">
+							<div class="col-sm-6">
+						        
+						        <!--soups-->
+						        <div class="form-group item_group ">
+									<label id="soups" class="item_heading text-center">Soups</label>
+									<div class="cat_soups">
+										<table class="item_list">
+											<tr>
+						    				<td class="item_name">Rasam</td>
+						    				<td class="item_price">$2.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Madras Tomato Soup</td>
+						    				<td class="item_price">$3.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Veg Corn Soup</span> </td>
+						    				<td class="item_price">$3.99</span></label></td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+										
+						  					<tr>
+						    				<td class="item_name">Chicken Corn Soup</td>
+						    				<td class="item_price">$4.99</span></label></td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Chettinad Kozhi Rasam</td>
+						    				<td class="item_price">$4.99</span></label></td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Chettinad Goat Soup</td>
+						    				<td class="item_price">$4.99</span></label></td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Chettinad Nandu Rasam</td>
+						    				<td class="item_price">$6.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				</table>
+									</div>
+								</div>
+						   	    
+								<!--Indian Appetizers-->
+								<div class="form-group item_group ">
+									<label id="indian_appetizers" class="item_heading text-center">Indian Appetizers</label>
+									<div class="cat_indian_appetizers">
+										<table class="item_list">
+											<tr>
+						    				<td class="item_name">Idly</td>
+						    				<td class="item_price">$4.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Fried Idly</td>
+						    				<td class="item_price">$6.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Chilli Idly</td>
+						    				<td class="item_price">$6.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Chilli Parotta</td>
+						    				<td class="item_price">$6.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Punugulu</td>
+						    				<td class="item_price">$5.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Chicken Lollipop</td>
+						    				<td class="item_price">$7.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</div>
+										
+						  					<tr>
+						    				<td class="item_name">Chicken 65</td>
+						    				<td class="item_price">$7.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Cashew Chicken</td>
+						    				<td class="item_price">$9.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Chettinad Goat Soup</td>
+						    				<td class="item_price">$4.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Chicken Majestic</td>
+						    				<td class="item_price">$9.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Nethili Fry	</td>
+						    				<td class="item_price">$8.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+										
+						  					<tr>
+						    				<td class="item_name">Fish Fingers</td>
+						    				<td class="item_price">$8.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Fish 65	</td>
+						    				<td class="item_price">$8.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Shrimp 65</td>
+						    				<td class="item_price">$10.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Veg. Samosa</td>
+						    				<td class="item_price">$0.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Fish 65	</td>
+						    				<td class="item_price">$8.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Pakora</td>
+						    				<td class="item_price">$5.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Fish 65	</td>
+						    				<td class="item_price">$8.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Cut Mirchi</td>
+						    				<td class="item_price">$5.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Egg Bonda</td>
+						    				<td class="item_price">$5.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Paneer Pakora</td>
+						    				<td class="item_price">$6.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+										</table>
+									</div>
+								</div>
+
+
+						   	   	<!--Biryanis-->
+						        <div class="form-group item_group">
+									<label id="biryanis" class="text-center item_heading">Biryanis</label>
+									<div class="cat_biryanis">
+										<table class="item_list">
+											<tr>
+						    				<td class="item_name">Veg Dum Biryani</td>
+						    				<td class="item_price">$9.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Chicken Dum Biryani</td>
+						    				<td class="item_price">$10.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Goat Biryani</td>
+						    				<td class="item_price">$11.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Vijayawada Spl Chicken Dum Biryani	</td>
+						    				<td class="item_price">$12.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+										
+						  					<tr>
+						    				<td class="item_name">Fish Biryani</td>
+						    				<td class="item_price">$11.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Prawn Biryani</td>
+						    				<td class="item_price">$12.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Egg Biryani	</td>
+						    				<td class="item_price">$9.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Nattu Kozhi Biryani	</td>
+						    				<td class="item_price">$11.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Kaadai Biryani</td>
+						    				<td class="item_price">$11.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Thalapakattu Biryani</td>
+						    				<td class="item_price">$12.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+										</table>
+									</div>
+								</div>
+						 	</div><!--class="col-sm-6" ending-->
+
+						 	<div class="col-sm-6">
+						        
+						        <!--rice bowl-->
+						        <div class="form-group item_group ">
+									<label id="rice" class="item_heading text-center">Rice Bowl</label>
+									<div class="cat_rice">
+										<table class="item_list">
+											<tr>
+						    				<td class="item_name">Jeera Pulao</td>
+						    				<td class="item_price">$7.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Kashmiri Pulao</td>
+						    				<td class="item_price">$9.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Kushka</span> </td>
+						    				<td class="item_price">$9.99</span></label></td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+										
+						  					<tr>
+						    				<td class="item_name">Plain Rice</td>
+						    				<td class="item_price">$2.99</span></label></td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Yogurt Rice</td>
+						    				<td class="item_price">$5.99</span></label></td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					
+						  				</table>
+									</div>
+								</div>
+						   	    
+								<!--chinese specials-->
+								<div class="form-group item_group ">
+									<label id="chinese_specials" class="item_heading text-center">Chinese Specials</label>
+									<div class="cat_chinese_specials">
+										<table class="item_list">
+											<tr>
+						    				<td class="item_name">Baby Corn Manchurian</td>
+						    				<td class="item_price">$7.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Gobi Manchurian</td>
+						    				<td class="item_price">$7.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Chilli Chicken</td>
+						    				<td class="item_price">$8.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Chicken Manchurian</td>
+						    				<td class="item_price">$8.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Chilli Paneer</td>
+						    				<td class="item_price">$8.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Veg Noodles</td>
+						    				<td class="item_price">$7.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</div>
+										
+						  					<tr>
+						    				<td class="item_name">Egg Noodles</td>
+						    				<td class="item_price">$7.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Chicken Noodles</td>
+						    				<td class="item_price">$8.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Veg Fried Rice</td>
+						    				<td class="item_price">$7.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Chicken Fried Rice</td>
+						    				<td class="item_price">$8.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Egg Fried Rice</td>
+						    				<td class="item_price">$7.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+																  					
+										</table>
+									</div>
+								</div>
+
+
+						   	   	<!--Thalis-->
+						        <div class="form-group item_group">
+									<label id="thalis" class="text-center item_heading">Thalis</label>
+									<div class="cat_thalis">
+										<table class="item_list">
+											<tr>
+						    				<td class="item_name">Veg Thali</td>
+						    				<td class="item_price">$9.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Mutton Thali</td>
+						    				<td class="item_price">$12.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+						  				
+						  					<tr>
+						    				<td class="item_name">Chicken Thali</td>
+						    				<td class="item_price">$11.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+
+						  					<tr>
+						    				<td class="item_name">Sea Food Thali</td>
+						    				<td class="item_price">$13.99</td>
+						    				<td><button type="button" class="btn btn-xs btn_add">ADD</button></td>
+						  					</tr>
+										
+										</table>
+									</div>
+								</div>
+						 	</div><!--class="col-sm-6" ending-->
+
+						 	
+
+						</div><!--class='row' ending-->
+			</div><!--Class="col-sm-8"ending-->
+
+			<br/><br/><br/>
+			<!--my order and setting-->
+			<div class="col-sm-4">
+				<!--My order box-->
+				<div class="my_order">
+					<h4 class="order_heading">MY ORDER</h4>
+					<!--ordered items list-table-->
+					<table  id="order_table">
+						
+
+					</table>
+					<br/>
+					<p><b>Total:<span id="total_amount"> $ 0.0</span></b></p>
+				</div>
+
+				<br/><br/>
+				<!--Order Setting-->
+				<div class="order_setting">
+					<h4 class="order_heading">ORDER SETTING</h4>
+					
+					<label>Order Timing:</label>
+					<div class="radio">
+ 						 <label><input type="radio" name="order_time" checked="checked" value="now">Now</label>
+					</div>
+					<div class="radio">
+ 						 <label><input type="radio" name="order_time" value="later">Later</label>
+					</div>
+					
+					<div class="time_setting">
+						<div class="form-group">
+  							<label for="date">Date:</label>
+  							<select class="form-control" id="date_sel" required>
+  								<option>Select Date</option>
+  							</select>
+						</div>
+						<div class="form-group">
+  							<label for="time">Time:</label>
+  							<select class="form-control" id="time_sel" required>
+  								<option disabled="disabled">Select Time</option>
+
+  							</select>
+						</div>
+					</div>
+					
+					<label>Service Method:</label>
+					<div class="radio">
+ 						 <label class="radio-inline"><input type="radio" name="service_method" checked="checked">Carryout</label>
+					</div>
+					<div class="radio">
+ 						 <label class="radio-inline"><input type="radio" name="service_method" disabled="disabled">Delivery</label>
+					</div>
+
+					<label>Pick-Up Location:</label>
+					<p><i>dosa bawarchi</i><br/>
+					   1380 S Main St<br/>
+					   Milpitas, CA 95035<br/>
+					   Phone: 408-945-9000
+					</p>
+				</div>
+
+				<br/><br/>
+				<!--Place order button-->
+				<div class="text-center">
+				<button type="submit" class="btn btn-lg" id="btn_order">Place Order</button>
+				</div>
+			</div>
+		</div><!--class="row" main row ending-->
+	</form>
+
+	
+
+</div><!--container ending-->
+
+
+<footer class="text-center">
+	<div id="fb_twitter">
+		<a href="https://www.facebook.com/Dosa-Bawarchi-169602009718136/" target="_blank"><img src="fb.png" class="fb" width="35" height="35" /></a>
+		<a href="https://twitter.com/dosa_bawarchi" target="_blank"><img src="twitter.png" width="38" height="35" class="twitter"/></a>
+	</div>
+</footer>
+
+
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--Bootstrap JS-->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--my own js-->
+<script src="order.js"></script>
+
+</body>
+</html>

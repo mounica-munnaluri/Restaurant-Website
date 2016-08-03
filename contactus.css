@@ -1,0 +1,43 @@
+body{
+	background-image: url('contactus.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-attachment: fixed;
+	background-size: contain;
+}
+.form-control{
+	border:1px solid #424242;
+	background-color: #FAFAFA;
+}
+.row{
+	margin-top: 30px;
+}
+.address,.hours{
+	border:1px solid #FAFAFA;
+	border-radius: 10px;
+	margin-top: 30px;
+	font-size: 14px;
+	padding: 10px;
+	background-color:rgba(42,42,42,0.8);
+
+	color: #fff;
+}
+.btn_contact{
+	background-color: #000;
+	color: #fff;
+	padding: 10px 50px;
+}
+.btn_contact:hover{
+	background-color: #000;
+	color: #fff;
+}
+
+.map_address{
+	margin-top: 30px;
+	background-color: rgba(42,42,42,0.8);	
+
+}
+.map{
+	padding: 10px 10px;
+	width: 100%;
+}

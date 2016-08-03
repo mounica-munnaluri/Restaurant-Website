@@ -1,0 +1,194 @@
+body{
+	font-family: "Merriweather", Helvetica, Arial, serif;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #9e9e9e;
+}
+
+
+#myCarousel{
+	margin-top: 0px;
+}
+
+.img_slide0{
+	background-image: url(app3.jpg);
+}
+.img_slide1{
+	background-image: url(bir2.jpg);
+}
+.img_slide2{
+	background-image: url(rice1.jpg);
+}
+.img_slide3{
+	background-image: url(order2.jpg);
+}
+.img_slide4{
+	background-image: url(tal1.jpg);
+}
+.img_slide0,.img_slide1,.img_slide2,.img_slide3,.img_slide4{
+	height: 650px;
+	opacity: 0.9;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/*who*/
+.who_we_are{
+	background-image: url('food2.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #f3f2f0;
+
+}
+
+h3{
+	color: #322C36;
+	font-family:Arial,serif;
+	font-weight: bold;
+}
+.h3-line-break{
+	border-top:4px solid #322C36;
+	width: 200px;
+	margin-left: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.end-line-break{
+	border-top:4px solid #322C36;
+	width: 80px;
+	margin-left: 0;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+.who_details p{
+	margin-top: 20px;
+}
+.trip_yelp a img{
+	border:1px solid #322C36;
+	background-color: #fff;
+	padding: 10px;
+}
+.who_details{
+	text-align: left;
+	margin-top:30px;
+	font:18px Georgia, serif ;
+	line-height: 1.5;
+}
+
+/*mission*/
+.mission_img{
+	margin-top: 100px;
+	height: 400px;
+    width: 100%;
+}
+.mission_img_div{
+
+	padding-right: 0;
+}
+.mission_review{
+	background-image: url('veg1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #D5DAD4;
+}
+.mission_details h3{
+	color: #fff;
+}
+.mission_details p{
+	margin-top:25px;
+}
+.mission_details{
+	background-image: url('div-block.jpg');
+	background-color: #322C36;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -100px;
+	font:18px Georgia, serif ;
+	line-height: 1.8;
+	text-align: left;
+}
+.mission{
+	padding: 150px 80px;
+}
+
+.mission_details .h3-line-break,.mission_details .end-line-break{
+	border-top:4px solid #fff;
+}
+
+/*review*/
+.review{
+	background-color: #D15A4E;
+	margin-top: -100px;
+	font:1.5em Georgia, serif ;
+	color: #fff;
+	font-style: italic;
+	z-index: 1;
+	height: 500px;
+}
+#review_carousel{
+	padding: 200px 80px;
+}
+
+.carousel-indicators{
+	margin-bottom: 10px;
+}
+.col-md-5,.col-md-7,.col-md-6{
+	padding: 0px;
+}
+.review_img{
+	z-index: -1;
+	height: 400px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+footer{
+	margin-top: 0;
+}
+
+/*Media query for mobile*/
+@media screen and (max-width: 992px){
+.review_img,.mission_img{
+	display: none;
+}
+.who_we_are{
+	background:none;
+	background-color:#f3f2f0;
+}
+.who_details,.mission_details{
+	text-align: center;
+}
+.h3-line-break,.end-line-break,.mission_details .h3-line-break,.mission_details .end-line-break{
+	margin: auto;
+}
+.trip_yelp{
+	margin-top: 20px;
+}
+.mission_review{
+	background: none;
+	background-color: #D5DAD4;
+}
+.mission_details{
+	margin-top: 30px;
+	text-align: center;
+}
+.mission{
+	padding: 40px 20px;
+}
+.review{
+	margin-top:0px;
+	margin-bottom: 30px;
+	height: 300px;
+	font-size: 20px;
+}
+#review_carousel{
+	padding: 80px 20px;
+}
+.img_slide0,.img_slide1,.img_slide2,.img_slide3,.img_slide4{
+	height: 350px;
+}
+}
+
+ 	
