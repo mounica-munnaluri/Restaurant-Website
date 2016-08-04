@@ -1,0 +1,82 @@
+
+
+
+/*footer*/
+footer{
+	position: relative;
+	background-color: #84000D;
+	height: 50px;
+	margin-top: 50px;
+	opacity: 0.8;
+}
+
+
+#fb_twitter img{
+	margin-right: 30px;
+	margin-top: 9px;
+}
+
+
+/*Navigation Menu*/
+@font-face {
+    font-family: menufont;
+    src: url(HighlandGothicFLF-Bold.ttf);
+}
+
+
+#mynav{
+	margin-bottom: 0;
+	border-radius: 0;
+	font-family: menufont;
+	font-size: 17px;
+}
+
+.navbar-inverse {
+    background-image:none;
+    background-color: #84000D;
+    border-color: #84000D;
+}
+
+.navbar .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #ae0b1b;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #fff;
+}
+
+#mainnav a{
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #fff;
+	
+}
+#mainnav a:hover{
+	background-color: #fff;
+	color: #000;
+}
+.logo img{
+	height: 60px;
+	border:1px solid transparent;
+}
+.logo{
+	display: block;
+	padding: 10px 0px;
+}
+
+@media screen and (max-width: 768px){
+.logo img{
+	height: 50px;
+
+}
+.logo{
+
+	padding: 10px 30px;
+}
+#mainnav a{
+	font-size: 15px;
+}
+}
