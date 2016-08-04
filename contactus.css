@@ -4,6 +4,7 @@ body{
 	background-position: left;
 	background-attachment: fixed;
 	background-size: contain;
+	background-color:#f3f2f0;
 }
 .form-control{
 	border:1px solid #424242;
