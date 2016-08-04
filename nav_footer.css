@@ -12,8 +12,12 @@ footer{
 
 
 #fb_twitter img{
-	margin-right: 30px;
+
 	margin-top: 9px;
+}
+.gap{
+	display:inline-block;
+	width:30px;
 }
 
 
